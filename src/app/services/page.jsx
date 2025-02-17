@@ -16,7 +16,7 @@ const Services = async () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {posts.map((d) => (
           <Link href={`/services/${d.id}`} key={d?.id} className="border p-4 rounded-md">
-            <h2>{d?.title}</h2>
+            <h2 className="font-bold text-xl">{d?.title}</h2>
             <p>{d?.body}</p>
           </Link>
         ))}

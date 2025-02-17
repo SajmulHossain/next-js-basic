@@ -14,9 +14,8 @@ const ServiceDetails = async ({ params }) => {
       <h3>Service Details Page {id}</h3>
 
       <div className="border p-4 w-fit">
-        <h3>{singleData?.name}</h3>
-        <img src={singleData?.image} alt="" />
-        <p>{singleData.description}</p>
+        <h3 className="font-bold text-xl">{singleData?.title}</h3>
+        <p>{singleData.body}</p>
       </div>
     </div>
   );
